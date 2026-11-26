@@ -1,9 +1,20 @@
 import "package:material_ui/material_ui.dart";
 
 class MaterialTheme {
-  final TextTheme textTheme;
-
-  const MaterialTheme(this.textTheme);
+  static const TextTheme textTheme = TextTheme(
+    displayLarge: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+    displayMedium: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+    displaySmall: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
+    headlineLarge: TextStyle(fontSize: 24, fontWeight: FontWeight.w600),
+    headlineMedium: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
+    headlineSmall: TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
+    bodyLarge: TextStyle(fontSize: 16),
+    bodyMedium: TextStyle(fontSize: 14),
+    bodySmall: TextStyle(fontSize: 12),
+    labelLarge: TextStyle(fontSize: 14, fontWeight: FontWeight.w600),
+    labelMedium: TextStyle(fontSize: 12),
+    labelSmall: TextStyle(fontSize: 11),
+  );
 
   static ColorScheme lightScheme() {
     return const ColorScheme(
@@ -119,6 +130,7 @@ class MaterialTheme {
     useMaterial3: true,
     brightness: colorScheme.brightness,
     colorScheme: colorScheme,
+    fontFamily: 'Roboto',
     textTheme: textTheme.apply(
       bodyColor: colorScheme.onSurface,
       displayColor: colorScheme.onSurface,
