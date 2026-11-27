@@ -5,7 +5,6 @@ class WelcomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.sizeOf(context).height;
     return SafeArea(
       child: Scaffold(
         body: Container(
