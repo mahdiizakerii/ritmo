@@ -65,8 +65,8 @@ class WelcomeScreen extends StatelessWidget {
                   onTap: () {},
                   child: Padding(
                     padding: const EdgeInsets.symmetric(
-                      horizontal: 50,
-                      vertical: 20,
+                      horizontal: 36,
+                      vertical: 18,
                     ),
                     child: Text(
                       "Let's Go",
